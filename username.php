@@ -1,5 +1,5 @@
 <?php
-include "conncet.php"; 
+include "connect.php"; 
 
 $sql = "INSERT INTO usename(id, name)
         VALUES (?, ?)";
@@ -13,10 +13,9 @@ $name = "Tran Viet Giang";
 
 $stmt->bind_param("is",$id,$name);
 
+
 if($stmt->execute()){
-    echo "Data successfully!";
-}else{
-    echo "Error!";
+echo "Data successfully!";
 }
 
 $stmt->close();

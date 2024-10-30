@@ -1,5 +1,5 @@
 <?php
-include "conncet.php"; 
+include "connect.php"; 
 
 
 // Câu lệnh SQL để chèn dữ liệu
