@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,12 +23,13 @@
         object-fit: cover;
         cursor: pointer;
         display: block;
-        margin-top: -18px;
-        margin-left: 140px;
+        margin-top: -60px;
+        margin-left: 770px;
     }
 
     section {
         text-align: center;
+        margin-top: 50px;
     }
 
     input {
@@ -84,7 +86,8 @@ if (isset($_POST['login'])) {
 
     // Kiểm tra kết quả truy vấn
     if ($result->num_rows > 0) {
-        header("location: truyvan_mysql.php");
+        $_SESSION['mssv'] = $username;
+        header("location: admin.php");
     } else {
         echo "<p>Tên đăng nhập hoặc mật khẩu không đúng!</p>";
     }

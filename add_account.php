@@ -1,5 +1,5 @@
 <?php
-include "conncet.php";
+include "connect.php";
 
 // Kiểm tra kết nối cơ sở dữ liệu
 if (!$conn) {
@@ -12,8 +12,8 @@ $stmt = $conn->prepare($sql);
 
 $conn->set_charset("utf8");
 
-$mssv = "G13"; 
-$pass = "123"; 
+$mssv = "23211TT29840"; 
+$pass = "200225Tvg@"; 
 $email = "tranvietgiang25@gmail.com";
 
 // Liên kết các tham số
